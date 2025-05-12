@@ -53,5 +53,6 @@
         android:layout_marginHorizontal="20dp"
         android:backgroundTint="#38B000"
         android:text="Login"
+        android:id="@+id/btnlogin"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>
