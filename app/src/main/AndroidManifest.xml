@@ -15,6 +15,12 @@
         android:theme="@style/Theme.MayAndroid"
         tools:targetApi="31">
         <activity
+            android:name=".AmountProcessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
             android:name=".RecyclerViewActivity"
             android:exported="false" />
         <activity

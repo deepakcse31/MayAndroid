@@ -39,7 +39,8 @@ public class RecyclerViewActivity extends AppCompatActivity {
         listData.add(new MyListData("Thirteen","Description",12));
         RecyclerViewAdapter adapter=new RecyclerViewAdapter(listData);
         binding.rvlist.setHasFixedSize(true);
-        binding.rvlist.setLayoutManager(new LinearLayoutManager(this));
+       // binding.rvlist.setLayoutManager(new LinearLayoutManager(this));
+        binding.rvlist.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         binding.rvlist.setAdapter(adapter);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
