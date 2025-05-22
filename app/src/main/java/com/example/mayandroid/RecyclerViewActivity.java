@@ -17,6 +17,8 @@ import java.util.List;
 public class RecyclerViewActivity extends AppCompatActivity {
     ActivityRecyclerViewBinding binding;
     List<MyListData> listData;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
