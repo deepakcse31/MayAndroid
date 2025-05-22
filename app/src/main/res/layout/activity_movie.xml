@@ -16,4 +16,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:id="@+id/rvmovie"
         />
+    <ProgressBar
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/progress_circular"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

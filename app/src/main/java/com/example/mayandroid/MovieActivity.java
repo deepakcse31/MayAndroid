@@ -1,6 +1,7 @@
 package com.example.mayandroid;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -41,6 +42,7 @@ public class MovieActivity extends AppCompatActivity {
             public void onResponse(Call<Movie> call, Response<Movie> response) {
                 if (response.isSuccessful())
                 {
+                    binding.progressCircular.setVisibility(View.GONE);
                     Movie movie=response.body();
                     adapter=new MovieAdapter(movie.getSearch());
                     binding.rvmovie.setHasFixedSize(true);
